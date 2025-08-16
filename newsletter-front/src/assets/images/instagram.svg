@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="90" height="90">
+    <!-- Circunferência externa -->
+    <circle cx="45" cy="45" r="44" stroke="white" stroke-width="2" fill="none" />
+
+    <!-- Ícone Instagram estilizado -->
+    <g transform="translate(0,0)">
+        <path d="M56.335 21.996H33.666c-6.434 0-11.667 5.234-11.667 11.667v22.669c0 6.435 5.234 11.668 11.667 11.668h22.669c6.434 0 11.668-5.233 11.668-11.668V33.664c0-6.434-5.234-11.668-11.668-11.668z"
+              fill="none" stroke="white" stroke-width="2"/>
+        <circle cx="45" cy="45" r="10.839" fill="none" stroke="white" stroke-width="2"/>
+        <circle cx="59.346" cy="29.653" r="2.999" fill="none" stroke="white" stroke-width="2"/>
+    </g>
+</svg>

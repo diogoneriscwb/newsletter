@@ -1,0 +1,131 @@
+.agradecimento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle at center, #0f172a 0%, #000000 100%);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.check-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.check-mensagem.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.check-icon {
+    font-size: 4rem;
+    color: #22c55e;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-obrigado {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.texto-obrigado {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.texto-obrigado.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+.redes-sociais {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.redes-sociais.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rede {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: visible;
+}
+
+.rede img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.rede:hover img {
+    transform: scale(1.1);
+}
+
+.rede svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.rede:hover svg {
+    transform: scale(1.1);
+}
+
+.rede.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.rede.linkedin img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.rede.linkedin .nome-rede {
+    font-size: 19px;
+    font-weight: 500;
+    /*color: #0077b5; !* azul do LinkedIn *!*/
+}
+
+.nome-rede {
+    white-space: nowrap;
+    transform: translateX(-100%);
+    animation: deslizar 2s forwards;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+@keyframes deslizar {
+    to {
+        transform: translateX(0);
+    }
+}
